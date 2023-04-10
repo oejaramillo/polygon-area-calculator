@@ -38,7 +38,7 @@ class Rectangle:
         width_amount = self.width / other_figure.width
 
         amount = height_amount * width_amount
-        return round(amount)
+        return int(round)
         
     
 class Square(Rectangle):
@@ -61,18 +61,3 @@ class Square(Rectangle):
         self.height = width
         self.width = self.height
         
-
-    
-
-rect = Rectangle(10, 5)
-rect.set_height(7)
-rect.set_width(9)
-
-rect2 = Rectangle(4, 8)
-
-sq1 = Square(8)
-sq1.set_height(7)
-sq1.set_width(4)
-sq1.set_side(4)
-
-print(rect.get_amount_inside(sq1))
